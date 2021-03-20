@@ -6,17 +6,17 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>我的第一篇博客文章 | jfp的博客</title>
+  <title>hexo | jfp的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="第一章内容第二章内容  参考文献xxxxxxx">
+  <meta name="description" content="安装Nodejs node -v    查看node版本 npm -v    查看npm版本">
 <meta property="og:type" content="article">
-<meta property="og:title" content="我的第一篇博客文章">
+<meta property="og:title" content="hexo">
 <meta property="og:url" content="http://example.com/2021/03/19/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0/index.html">
 <meta property="og:site_name" content="jfp的博客">
-<meta property="og:description" content="第一章内容第二章内容  参考文献xxxxxxx">
+<meta property="og:description" content="安装Nodejs node -v    查看node版本 npm -v    查看npm版本">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-03-19T09:45:40.000Z">
-<meta property="article:modified_time" content="2021-03-20T00:47:22.034Z">
+<meta property="article:modified_time" content="2021-03-20T02:11:36.695Z">
 <meta property="article:author" content="Snakarea">
 <meta name="twitter:card" content="summary">
   
@@ -157,7 +157,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      我的第一篇博客文章
+      hexo
     </h1>
   
 
@@ -170,9 +170,67 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><h2 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h2><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>内容</p>
-<hr>
-<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p>xxxxxxx</p>
+        <p>安装Nodejs</p>
+<p>node -v    查看node版本</p>
+<p>npm -v    查看npm版本</p>
+<!-- more -- >
+
+npm install -g cnpm --registry=http://registry.npm.taobao.org    安装淘宝的cnpm 管理器
+
+cnpm -v    查看cnpm版本
+
+cnpm install -g hexo-cli    安装hexo框架
+
+hexo -v    查看hexo版本
+
+mkdir blog    创建blog目录
+
+cd blog     进入blog目录
+
+sudo hexo init     生成博客 初始化博客
+
+hexo s    启动本地博客服务
+
+http://localhost:4000/    本地访问地址
+
+hexo n "我的第一篇文章" 创建新的文章 
+
+返回blog目录
+
+hexo clean 清理
+
+hexo g 生成
+
+Github创建一个新的仓库 YourGithubName.github.io
+
+cnpm install --save hexo-deployer-git 在blog目录下安装git部署插件
+
+----
+
+配置_config.yml 
+
+-----
+     Deployment
+     Docs: https://hexo.io/docs/deployment.html
+    deploy:
+      type: git
+     repo: https://github.com/YourGithubName/YourGithubName.github.io.git
+      branch: master
+-----
+hexo d    部署到Github仓库里
+https://YourGithubName.github.io/  访问这个地址可以查看博客
+
+ git clone https://github.com/litten/hexo-theme-yilia.git themes/yilia  下载yilia主题到本地
+
+修改hexo根目录下的 _config.yml 文件 ： theme: yilia
+
+hexo c    清理
+hexo g    生成
+hexo d    部署到远程Github仓库
+https://YourGithubName.github.io/  查看博客
+
+
+
 
       
 
@@ -285,7 +343,7 @@
                 </span>
                 <span class="tooltip-content">
                     <div class="toc-article">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0"><span class="toc-number">1.</span> <span class="toc-text">第一章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%86%85%E5%AE%B9"><span class="toc-number">2.</span> <span class="toc-text">内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0"><span class="toc-number">3.</span> <span class="toc-text">第二章</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-number">4.</span> <span class="toc-text">参考文献</span></a></li></ol>
+                    目录，不存在的…
                     </div>
                 </span>
             </div>
