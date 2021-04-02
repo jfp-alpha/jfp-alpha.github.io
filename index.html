@@ -151,9 +151,24 @@
     <article id="post-$attrs与$listeners属性" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/04/02/$attrs%E4%B8%8E$listeners%E5%B1%9E%E6%80%A7/">Vue中的$attrs及$listeners</a>
+    </h1>
+  
+
+        
+        <a href="/2021/04/02/$attrs%E4%B8%8E$listeners%E5%B1%9E%E6%80%A7/" class="archive-article-date">
+  	<time datetime="2021-04-01T16:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-04-02</time>
+</a>
+        
+      </header>
+    
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Vue中的-attrs及-listeners"><a href="#Vue中的-attrs及-listeners" class="headerlink" title="Vue中的$attrs及$listeners"></a>Vue中的$attrs及$listeners</h1><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多级组件嵌套需要传递数据时，通常使用的方法是通过vuex。如果仅仅是传递数据，而不做中间处理，使用 vuex 处理，未免有点杀鸡用牛刀。Vue 2.4 版本提供了另一种方法，使用 v-bind=”$attrs”, 将父组件中不被认为 props特性绑定的属性传入子组件中，通常配合 interitAttrs 选项一起使用。之所以要提到这两个属性，是因为两者的出现使得组件之间跨组件的通信在不依赖 vuex 和事件总线的情况下变得简洁，业务清晰。</p>
+        <h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>多级组件嵌套需要传递数据时，通常使用的方法是通过vuex。如果仅仅是传递数据，而不做中间处理，使用 vuex 处理，未免有点杀鸡用牛刀。Vue 2.4 版本提供了另一种方法，使用 v-bind=”$attrs”, 将父组件中不被认为 props特性绑定的属性传入子组件中，通常配合 interitAttrs 选项一起使用。之所以要提到这两个属性，是因为两者的出现使得组件之间跨组件的通信在不依赖 vuex 和事件总线的情况下变得简洁，业务清晰。</p>
 <p><strong>首先分析以下应用场景：</strong></p>
         
           <a class="article-more-a" href="/2021/04/02/$attrs%E4%B8%8E$listeners%E5%B1%9E%E6%80%A7/#more">more >></a>
